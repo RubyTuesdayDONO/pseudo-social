@@ -2,6 +2,14 @@
 #   https://www.rohanjain.in/cargo-cross/
 #   https://github.com/crodjer/sysit/blob/v0.4.0/.github/workflows/release.yml
 
+name: Build
+
+on:
+  push:
+
+env:
+  CARGO_TERM_COLOR: always
+
 jobs:
   build-crate:
     name: Build Crate
